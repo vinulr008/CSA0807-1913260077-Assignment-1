@@ -1,0 +1,13 @@
+import milkrate
+
+print("Milk Payment Calculator")
+
+litres = float(input("Enter Litres: "))
+fat = float(input("Enter Fat: "))
+snf = float(input("Enter SNF: "))
+
+rate = milkrate.rate_per_litre(fat, snf)
+amount = milkrate.payout(litres, fat, snf)
+
+print("Rate per Litre:", rate)
+print("Total Payment:", amount)
